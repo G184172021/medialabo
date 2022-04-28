@@ -48,6 +48,7 @@ h1 {
 main {
   font-size: medium;
   padding: 2em;
+  font-weight: bold;
 }
 
 main p, main li {
@@ -55,5 +56,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
+  margin-left: 60px;
 }
