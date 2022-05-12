@@ -1,0 +1,9 @@
+h1 {
+    color: blue;
+}
+h2 {
+    color: rgb(201, 87, 104);
+}
+section {
+    display: flex;
+  }
