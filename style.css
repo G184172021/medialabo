@@ -6,4 +6,8 @@ h3 {
 }
 section {
     display: flex;
+    flex-wrap: wrap;
   }
+article{
+    h2
+}
