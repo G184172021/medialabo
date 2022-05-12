@@ -15,11 +15,12 @@ hantei();
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
     let yoso = 4;       // 第5回課題:テキストボックスの数値をここに代入
+    kaisu=kaisu+1;
     // 課題3-1：ここの判定処理を作成する．
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
-for (let i=1; i<kaisu; i=i+1) {
-    console.log(i+"回目の予想:"+yoso);
+
+    console.log(kaisu+"回目の予想:"+yoso);
     if (yoso===kotae) {
         console.log("正解です。おめでとう！");
     }
@@ -29,9 +30,7 @@ for (let i=1; i<kaisu; i=i+1) {
     else if(yoso>kotae) {
             console.log("まちがい。答えはもっと小さいですよ");
         }
+    else if(3<kaisu) {
+        console.log("答えは"+kotae+"でした。すでにゲームは終了しています。");
     }
-    if (kaisu<i) {
-       console.log("答えは"+kaito+"でした。すでにゲームは終わっています。");
-    }
-
 }
