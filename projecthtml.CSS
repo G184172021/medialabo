@@ -7,3 +7,6 @@ h2 {
 section {
     display: flex;
   }
+  h1 {
+background-color: pink;
+  }
