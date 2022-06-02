@@ -55,7 +55,7 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let e = document.querySelector('#aaa');
+    let e = document.querySelector('input[name=integer]');
     let key = e.value;
     let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + key + '.json';
 
