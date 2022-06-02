@@ -12,17 +12,53 @@
 <body>
 <strong>
 <h1>世界の天気</h1>
-<h2>日本</h2>
-<h2>アメリカ大陸</h2>
-<h2>ヨーロッパ地方</h2>
-<h2>オーストラリア</h2>
-<h2>アフリカ大陸</h2>
-<h2>ブラジル</h2>
+<h2>都市ID,都市名,国名</h2>
+<ul>
+<li>
+    <h2>   360630  Cairo カイロ （エジプト）</h2>
+</li>
+<li>
+    <h2>   524901  Moscow モスクワ （ロシア）</h2>
+</li>
+<li>
+    <h2>   993800  Johannesburg ヨハネスブルク （南アフリカ）</h2>
+</li>
+<li>
+    <h2>   1816670 Beijing 北京 （中華人民共和国）</h2>
+</li>
+<li>
+    <h2>   1850147 Tokyo 東京 （日本）</h2>
+</li>
+<li>
+    <h2>   1880252 Singapore シンガポール</h2>
+</li>
+<li>
+    <h2>   2147714 Sydney シドニー （オーストラリア）</h2>
+</li>
+<li>
+    <h2>   2643743 London ロンドン （イギリス）</h2>
+</li>
+<li>
+    <h2>   2968815 Paris パリ （フランス）</h2>
+</li>
+<li>
+    <h2>   3451189 Rio de Janeiro リオデジャネイロ （ブラジル）</h2>
+</li>
+<li>
+    <h2>   5128581 New York ニューヨーク （アメリカ合衆国）</h2>
+</li>
+<li>
+    <h2>   5368361 Los Angeles ロサンゼルス （アメリカ合衆国）</h2>
+</li>
 </strong>
+</ul>
+<div id="toshi"></div>
+<div id="max"></div>
+<div id="mini"></div>
 <label for="integer">こちらに都市のIDを入力してください</label>
 <input type="text" name = "integer" id="integer" size ="5">
 <button id="print"> 入力</button>
-<div id="ID"></div>
+<div id="datas"></div>
 <button id="sendRequest">通信</button>
 </body>
 </html>

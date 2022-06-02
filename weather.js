@@ -48,6 +48,16 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 //天気予報のテンプレート: 都市名，最高気温，最低気温を出力させる
 
+let t1 = document.querySelector('div#toshi');
+t1.textContent = (data.name);
+
+let t2 = document.querySelector('div#max');
+t2.textContent = (data.main.temp_max);
+
+let t3 = document.querySelector('div#mini');
+t3.textContent = data.main.temp_min;
+
+
 let b = document.querySelector('#sendRequest');
 b.addEventListener('click', sendRequest);
 
@@ -82,7 +92,6 @@ function showResult(resp) {
     // data.x を出力
     console.log(data.x);
 }
-
 // 通信エラーが発生した時の処理
 function showError(err) {
     console.log(err);
@@ -92,3 +101,5 @@ function showError(err) {
 function finish() {
     console.log('Ajax 通信が終わりました');
 }
+let t4 = document.querySelector('div#datas');
+t4.textContent = data.object.weather;
