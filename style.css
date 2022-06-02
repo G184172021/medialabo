@@ -1,10 +1,36 @@
+html {
+    font-family: sans-serif;
+  }
+
 h2 {
+    text-align: center;
     color: blue;
 }
 h3 {
+    text-align: center;
     color: rgb(201, 87, 104);
 }
-section {
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    background: purple;
+    height: 100px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
+  section {
     display: flex;
+    flex: 200px;
     flex-wrap: wrap;
   }
