@@ -81,6 +81,30 @@ function showResult(resp) {
     // サーバから送られてきたデータを出力
     let data = resp.data;
 
+    //都市名
+    let t4 = document.querySelector('div#data1');
+    t4.textContent = data.name;
+    //緯度
+    let t5 = document.querySelector('div#data2');
+    t5.textContent = data.coord.lon;
+    //経度
+    let t6 = document.querySelector('div#data3');
+    t6.textContent = data.coord.lat;
+    //天気
+    let s = document.querySelector('div#data4');
+    s.textContent = data.weather.description;
+    //最低気温
+    let s1 = document.querySelector('div#data5');
+    s1.textContent = data.main.temp_min;
+    //最高気温
+    let s2 = document.querySelector('div#data6');
+    s2.textContent = data.main.temp_max;
+
+    let s3 = document.querySelector('div#data7');
+    s3.textContent = data.main.humidity;
+
+    let s4 = document.querySelector('div#data8');
+    s4.textContent = data.wind.speed;
     // data が文字列型なら，オブジェクトに変換する
     if (typeof data === 'string') {
         data = JSON.parse(data);
@@ -101,5 +125,3 @@ function showError(err) {
 function finish() {
     console.log('Ajax 通信が終わりました');
 }
-let t4 = document.querySelector('div#datas');
-t4.textContent = data.object.weather;
