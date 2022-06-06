@@ -92,19 +92,25 @@ function showResult(resp) {
     t6.textContent = data.coord.lat;
     //天気
     let s = document.querySelector('div#data4');
-    s.textContent = data.weather.description;
+    s.textContent = data.weather[0].description;
     //最低気温
     let s1 = document.querySelector('div#data5');
     s1.textContent = data.main.temp_min;
     //最高気温
     let s2 = document.querySelector('div#data6');
     s2.textContent = data.main.temp_max;
-
+    //湿度
     let s3 = document.querySelector('div#data7');
     s3.textContent = data.main.humidity;
-
+    //風速
     let s4 = document.querySelector('div#data8');
     s4.textContent = data.wind.speed;
+
+    let s5 = document.querySelector('div#data9');
+    s5.textContent = data.wind.deg;
+
+    let s6 = document.querySelector('div#data10');
+    s6.textContent = data.name;
     // data が文字列型なら，オブジェクトに変換する
     if (typeof data === 'string') {
         data = JSON.parse(data);
