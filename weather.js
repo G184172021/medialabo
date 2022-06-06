@@ -104,13 +104,10 @@ function showResult(resp) {
     s3.textContent = data.main.humidity;
     //風速
     let s4 = document.querySelector('div#data8');
-    s4.textContent = data.wind.speed;
-
+    s4.textContent = data.wind.speed; 
+    //風向
     let s5 = document.querySelector('div#data9');
     s5.textContent = data.wind.deg;
-
-    let s6 = document.querySelector('div#data10');
-    s6.textContent = data.name;
     // data が文字列型なら，オブジェクトに変換する
     if (typeof data === 'string') {
         data = JSON.parse(data);
