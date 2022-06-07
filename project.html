@@ -13,7 +13,7 @@
 <strong>
 <h1>世界の天気</h1>
 <h2>都市ID,都市名,国名</h2>
-<grid>
+
     <h3>   360630  Cairo カイロ （エジプト）</h3>
     <h3>   524901  Moscow モスクワ （ロシア）</h3>
     <h3>   993800  Johannesburg ヨハネスブルク （南アフリカ）</h3>
@@ -26,15 +26,18 @@
     <h3>   3451189 Rio de Janeiro リオデジャネイロ （ブラジル）</h3>
     <h3>   5128581 New York ニューヨーク （アメリカ合衆国）</h3>
     <h3>   5368361 Los Angeles ロサンゼルス （アメリカ合衆国）</h3>
-</grid>
+
 </strong>
 </ul>
 <div id="toshi"></div>
 <div id="max"></div>
 <div id="mini"></div>
+
 <label for="integer">こちらに都市のIDを入力してください</label>
-<input type="text" name = "integer" id="integer" size ="5">
-<button id="print"> 入力</button>
+<input type="text" name = "integer" id="integer" size ="20">
+<!--<button id="print"> 入力</button>
+-->
+<button id="sendRequest">通信</button>
 <div id="data1"></div>
 <div id="data2"></div>
 <div id="data3"></div>
@@ -44,6 +47,7 @@
 <div id="data7"></div>
 <div id="data8"></div>
 <div id="data9"></div>
-<button id="sendRequest">通信</button>
+
+
 </body>
 </html>
